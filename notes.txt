@@ -1,0 +1,33 @@
+yarn add webpack webpack-cli
+
+webpack.config.js
+- need this config file for webpack
+- rules
+-- use
+--- which loaders to use to transpile the code down to old js 
+--- babel is one of the loaders
+--- reads from right to left
+
+package.json
+scripts
+  build: "webpack --mode production"
+
+yarn add @babel/core @babel/preset-env @babel/preset-react babel-loader
+- preset-env converts ES6 to ES5
+- @babel/preset-react
+-- is for react
+-- there are all types of libraries, vue, etc
+
+babel-loader
+- look inside root directory for a file called .babelrc
+
+
+yarn add style-loader css-loader
+style-loader allow import of styles into our react component files
+css-loader allows css to be read by js
+
+yearn add html-loader html-webpack-plugin
+html-loader
+- reads html inside js file
+html-webpack-plugin
+- build html files in optimized chunks
